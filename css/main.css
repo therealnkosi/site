@@ -1,0 +1,279 @@
+/*--*MAIN SHOP / MUSIC SECTION*--------------------------------------------------*/
+main {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #1c1c1c, #0a0a0a);
+  font-size: clamp(0.3rem, 5vw, 4rem);
+  color: white;
+  animation: bgPulse 12s ease-in-out infinite alternate;
+}
+
+
+
+
+/*
+
+section {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  
+
+  background: linear-gradient(135deg, #0a0a0a, #1c1c1c, #0a0a0a);
+  color: white;
+font-weight: 800;
+ 
+  gap: 1rem;
+  height: 100vh;
+
+  padding: 0 15% 0 15%;
+  padding-bottom: 5%;
+
+}
+
+section p {
+  margin-bottom:  3%;
+}
+
+*/
+
+/* Background subtle pulse animation */
+@keyframes bgPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.video_container {
+ width: 100%;
+  position: relative;
+
+}
+
+#bgVideo {
+ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  filter: grayscale(100%);
+ 
+}
+
+  /*--  QUOTE BOX-------------------------------------------------------*/
+
+
+  
+  
+  .quote_box {
+    /* Structure */
+    position: absolute;
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;   
+    max-width: 100%;
+
+    
+    top: 5%;
+    /* Art / Styling */
+    font-size: clamp(.5rem, 2.5vw, 2.0rem);
+    font-weight: 600;
+    background-color: transparent;
+    color: #fff;
+    padding: 7px 100px;
+
+  }
+  
+ 
+  .quote_box sub {
+    font-size: clamp(.5rem, 4.0vw, 2.5rem);
+  }
+  
+  /* Inner content (paragraph or span) */
+  #quote {
+    margin: 0;
+    padding: 0;
+    animation: glowPulse 2s infinite ease-in-out;
+  }
+  
+
+  @keyframes glowPulse {
+    0%, 100% {
+      text-shadow:
+        0 0 5px #FFD700,
+        0 0 10px #FFD700,
+        0 0 20px #FFA500,
+        0 0 30px #FFA500;
+    }
+    50% {
+      text-shadow:
+        0 0 2px #FFD700,
+        0 0 5px #FFD700,
+        0 0 10px #FFA500,
+        0 0 15px #FFA500;
+    }
+  }
+
+
+
+
+
+
+/* Middle flex container */
+.middle-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  gap: 1%;
+  
+}
+
+.middle-box a {
+  color: unset;
+}
+
+/* Middle cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  max-height: 20rem;
+  max-width: 20rem;
+  padding: 3rem;
+  margin: 1rem;
+  gap: 3%;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  cursor: pointer;
+ 
+ 
+  
+}
+
+
+/* Merchandise / album images */
+.card img {
+  max-width: 10rem;
+  max-height: 10rem;
+
+  border-radius: 15px;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, border 0.3s ease, filter 0.3s ease;
+  object-fit: cover; /* make image cover entire div */
+
+}
+
+
+/* Hover lift + glow */
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 7px 17px rgba(255, 215, 0, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Image hover glow + rotate */
+.card img:hover {
+  transform: scale(1.1) rotate(-3deg);
+  border: 2px solid gold;
+  filter: drop-shadow(0 0 15px gold);
+}
+
+
+/*CARD > P and symbol */
+.font_and_symbol {
+
+  max-width: 8rem;
+  max-height: 8rem;
+  margin-top: 1rem;
+
+ 
+
+}
+
+/*CARD > P */
+
+.card p {
+
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+
+/* Link buttons */
+.card a {
+  color: white;
+  font-size: clamp(1rem, 4vw, 2rem);
+  text-decoration: none;
+  
+  max-width: auto;
+  max-height: auto;
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+}
+
+.card a:hover {
+  color: gold;
+  border-color: gold;
+  background: rgba(255, 215, 0, 0.1);
+  transform: scale(1.1);
+  text-shadow: 0 0 8px gold;
+}
+
+
+
+
+/* Optional: slight bounce on load for items */
+@keyframes bounceIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.card {
+  animation: bounceIn 0.8s ease forwards;
+}
+
+
+
+
+
+/* Media query for screens smaller than 1181px */
+
+/*
+@media (max-width: 1180px) {
+
+
+.middle-box {
+  display: grid;
+  
+
+}
+
+
+
+}
+*/
+

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>NKOSI</title>
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/footer_top.css">
+<link rel="stylesheet" href="css/footer_bottom.css">
+
+
+
+
+
+<!-- Font Awesome for social icons -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+
+
+<body>
+
+
+<!-- Header -->
+
+
+<header>
+
+
+  <div class="logo_image">
+    <a href="index.html"><img src="img/eye_black.png" alt="Egyptian Logo"></a>
+  </div>
+
+
+  <div class="logo_nkosi">
+    <a href="index.html"> <h1>NKOSI</h1></a><span class="copyright">©</span> 
+  </div>
+
+
+  <nav>
+
+   <i class="fa-solid fa-bars" id="bars"></i>
+
+    <div class="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html" target="_blank">Shop</a>
+      <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
+    </div>
+
+  </nav>
+
+</header>
+
+
+
+<main>
+ 
+
+  <div class="video_container">
+ 
+    <video id="bgVideo" autoplay muted loop>
+      <source src="mp4/nyc.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+
+    </video>
+
+      
+  <div class="quote_box">
+
+    <p id="quote">
+      
+      Psalms 82:6  <br><br>
+
+      <sub>
+      I have said, Ye are gods 
+      and all of you are children of the most High.
+    </sub>
+        
+
+    </p>
+  </div>
+</div>
+    
+
+        <div class="middle-box">
+
+          <!-- Shop -->
+          <a href="https://shopify.com" target="_blank">
+            <div class="card">
+              <img src="img/malikbw.png" alt="Apparel Image">
+               <div class="font_and_symbol">
+                  <i class="fas fa-tshirt"></i>
+                  <p>The Shop</p>
+                </div>
+            </div>
+            </a>
+          
+              <!-- Music -->
+              <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">
+              <div class="card">
+                <img src="img/music.png" alt="Music Image"> 
+                <div class="font_and_symbol">
+                  <i class="fas fa-music"></i>
+                <p>The Music</p>
+                </div>
+              </div>
+            </a>
+
+
+
+              <!-- Message-->
+              <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4WiuV0L-WQDkmTWi3evIz0n" target="_blank">
+                <div class="card">
+                  <img src="img/Maat.png" alt="Music Image">
+                      <div class="font_and_symbol">
+                    <i class="fas fa-book"></i>
+                  <p>The Message</p>
+                </div>
+              </div>
+            </a>
+
+
+          </div>
+
+
+
+
+ 
+          
+          
+        
+  </main>
+
+     <footer>
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://www.youtube.com/@NKOSI-777" target="_blank" id="yt"><i class="fab fa-youtube"></i></a>
+          <a href="mailto:nkositheking7@gmail.com" target="_blank" id="mail"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://cash.app/$SimpsonA777" target="_blank" id="cash"><i class="fa fa-usd" aria-hidden="true"></i></a>
+          
+          
+          </a>
+
+           <!--<a href="#" target="_blank"><i class="fab fa-instagram"></i></a> -->
+          <!-- <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a> -->
+        </div>
+        
+
+        
+        <div class="artist-profile">
+            <h2>@NKOSI-777</h2>
+            <p>Recording Artist, Songwriter,  Music Producer</p> <br>
+            <p>© 2025 NKOSI. All rights reserved. Website by <a href="www.mikoson.com">mikeson designs.</a></p>
+          </div>
+        </footer>
+
+
+        <div class="music-player">
+            <audio controls autoplay muted id="audio">
+              <source src="mp4/nkosi.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          
+            <p id="music-message">Click play and unmute for the full experience.</p>
+          </div>
+
+
+
+  
+  <script>
+    const audio = document.getElementById("audio");
+    const message = document.getElementById("music-message");
+  
+    function enableAudioOnce(event) {
+      // Only unmute if it's muted
+      if (audio.muted) {
+        audio.muted = false;
+        audio.volume = 0.5; // optional starting volume
+        audio.play().catch(err => console.log("Audio play error:", err));
+        message.style.display = "none"; // hide the message
+      }
+    }
+
+    setTimeout(() => {
+  audio.pause();
+}, 8000); // 8000ms = 8 seconds
+
+  
+    // Only trigger on **click**
+    document.addEventListener("click", enableAudioOnce, { once: true });
+    
+  </script>
+
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

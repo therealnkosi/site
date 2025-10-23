@@ -1,0 +1,40 @@
+
+
+/*--*FOOTER > SOCIALS > *-------------------------------------------------------*/
+  footer {
+   
+    display: grid;
+    grid-template-rows: auto; 
+    padding: 20px;
+    background: linear-gradient(135deg, #0a0a0a, #1c1c1c, #0a0a0a);
+    width: 100%;
+    min-height: auto;
+    border-top: 1px solid white;
+    text-align: center;
+  }
+
+
+  /*--*SOCIALS*-------------------------------------------------------------*/
+
+  .social-links a {
+    color: white;
+    font-size: 2.8rem;
+    text-decoration: none;
+    margin-left: 10px; 
+    transition: color 0.3s;
+    
+  }
+  
+ 
+
+  #yt:hover {
+    color: red;
+  }
+
+  #mail:hover {
+    color: orange;
+  }
+
+  #cash:hover {
+    color: greenyellow;
+  }

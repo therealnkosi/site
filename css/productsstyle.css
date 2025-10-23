@@ -1,0 +1,160 @@
+
+
+
+
+  /* ===== Grid Layout ===== */
+  .shop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+   width: 100%;
+    margin: 0 auto;
+   
+    height: 100vh;
+    background-color: #0d0d0d;
+    color: white;
+    
+  }
+
+  /* ===== Product Cards ===== */
+  .product-card {
+    background: #1a1a1a;
+    border-radius: 16px;
+    padding: 5%;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+    transition: all 0.3s ease;
+    max-height: 15rem;
+    max-width: 15rem;
+    margin-top: 5rem;
+
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4);
+  }
+
+  .product-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+
+  .product-card h2 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .product-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  /* ===== Golden Button ===== */
+  .snipcart-add-item {
+    background: linear-gradient(135deg, #ffd700, #e6b800);
+    color: #000;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+
+  .snipcart-add-item:hover {
+    background: linear-gradient(135deg, #ffea70, #ffcc00);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+  }
+
+  /* ===== Cart Button (Optional Navbar) ===== */
+  .cart-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ffd700;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.5);
+    transition: 0.3s;
+  }
+
+  .cart-button:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 600px) {
+    .cart-button {
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+section {
+
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: white;
+    line-height: 1.7;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    height: 100vh;
+
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+  }
+
+
+  .products_grid {
+
+    display: grid;
+    grid-template-rows: repeat(3);
+    grid-template-columns: repeat(3);
+    border-color: 5px solid antiquewhite;
+    background-color: #fff;
+    
+  }
+  */

@@ -1,0 +1,21 @@
+
+/*--*FOOTER BOTTOM > COPYRIGHTS*-------------------------------------------------------------*/
+
+
+.artist-profile {
+    text-align: center;
+    color: white; 
+    font-family: Arial, sans-serif;
+    padding: .5rem;
+    
+  }
+
+  .artist-profile h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .artist-profile p {
+    font-size: .5rem;
+    font-weight: 500;
+  }
