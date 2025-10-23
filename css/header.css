@@ -25,6 +25,8 @@
   justify-content: center;
   animation: pulseHipHop 1.5s infinite;
   max-width: 100px;
+  padding: 10%;
+  
 }
 
 @keyframes pulseHipHop {
@@ -57,7 +59,7 @@
     place-self: center; 
     padding: 1%;
     gap: 0.25rem;                
-    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-size: clamp(.8rem, 2vw, 1.2rem);
     
   }
   
@@ -69,7 +71,7 @@
   
   
   .logo_image img {
-    width: 125px;
+    width: clamp(60px, 10vw, 200px); 
     height: auto;
   }
   
