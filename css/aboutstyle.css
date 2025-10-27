@@ -16,7 +16,7 @@
   .about-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    
     justify-content: center;
     max-width: 1100px;
     gap: 40px;
@@ -37,6 +37,9 @@
     border-radius: 50%;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    filter: grayscale(100%);
+    
+ 
   }
 
   .about-image img:hover {

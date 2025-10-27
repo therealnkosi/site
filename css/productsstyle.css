@@ -5,8 +5,8 @@
   /* ===== Grid Layout ===== */
   .shop-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto; /* 3 columns */
+   
     gap: 30px;
  
     background-color: #0d0d0d;
@@ -17,6 +17,7 @@
    
    
   }
+
 
 
 #kicks {
@@ -71,6 +72,25 @@
     text-align: center;
 
   }
+
+ .shirts, .hoodies, .beanies, .shoes, .caps {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
   /* ===== Golden Button ===== */
   .snipcart-add-item {
