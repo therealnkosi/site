@@ -1,0 +1,59 @@
+  /*--  QUOTE BOX-------------------------------------------------------*/
+
+  
+  .quote_box {
+    /* Structure */
+    position: absolute;
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;  
+
+    max-width: 100%;
+
+    
+    top: 5%;
+    /* Art / Styling */
+    font-size: clamp(.5rem, 2.5vw, 2.0rem);
+    font-weight: 600;
+    background-color: transparent;
+    color: #fff;
+    padding: 7px 100px;
+
+  }
+  
+ 
+  .quote_box sub {
+    font-size: clamp(.5rem, 3.0vw, 2.0rem);
+    
+  }
+  
+  /* Inner content (paragraph or span) */
+  #quote {
+    margin: 0;
+    padding: 0;
+    animation: glowPulse 2s infinite ease-in-out;
+    
+  }
+
+
+  .video_container {
+    width: 100%;
+    max-height: 15rem;
+   position: relative;
+   
+   }
+   
+   /*
+   #bgVideo {
+    
+     top: 0;
+     left: 0;
+     width: 100%;
+     max-height: 15rem;
+     object-fit: cover;   
+     filter: grayscale(100%);
+    
+   }
+   */
+   

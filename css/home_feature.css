@@ -1,0 +1,133 @@
+.sneaker-feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(2rem, 5vw, 6rem);
+    background: linear-gradient(135deg, #000 40%, #111 100%);
+    color: #fff;
+    min-height: 60vh;
+    width: 100%;
+  }
+  
+  .feature-content {
+    max-width: 550px;
+    z-index: 2;
+  }
+  
+  .drop-title {
+    font-size: clamp(2.0rem, 6vw, 6rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    background: linear-gradient(90deg, rgb(209, 188, 66), #ffbe00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .drop-subtitle {
+    font-size: clamp(1.0rem, 2vw, 1.8rem);
+    margin-top: 0.5rem;
+    color: #ccc;
+    font-weight: 500;
+  }
+  
+  .drop-text {
+    font-size: clamp(.9rem, 1.3vw, 1.2rem);
+    margin: 1.5rem 0 2rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  .add-cart {
+    background: gold;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 0.9rem 2.2rem;
+    font-size: clamp(.8rem, 2vw, 1.2rem);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .add-cart:hover {
+    background: #ffbe00;
+    color: #000;
+    transform: scale(1.05);
+  }
+  
+  .feature-image img {
+    width: clamp(280px, 45vw, 620px);
+    transform: rotate(-12deg);
+    filter: drop-shadow(0 0 25px goldenrod);
+    transition: transform 0.5s ease;
+  }
+  
+  .feature-image img:hover {
+    transform: rotate(-8deg) scale(1.05);
+  }
+  
+
+  
+  .shop-now {
+    display: inline-block;
+    padding: 8px 20px; 
+    background-color: #34352f; 
+    color: #d3d3d3;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+    margin: 1%;
+   
+    font-size: 0.85rem;
+  }
+  
+  .shop-now:hover {
+    background-color: #e6c200;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    color: #000;
+  }
+  
+  
+
+
+
+  
+
+
+  @media (max-width: 800px) {
+    .sneaker-feature {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .feature-image img {
+      transform: rotate(0);
+    }
+  }
+  
+  
+  .add-cart {
+    background: gold;
+    color: #000;
+    border: none;
+    border-radius: 40px;
+    padding: 0.9rem 2.2rem;
+   
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .add-cart:hover {
+    background: #ffbe00;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  

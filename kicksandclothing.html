@@ -9,6 +9,8 @@
 <title>NKOSI</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
+
+
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/header.css">
@@ -16,6 +18,7 @@
 <link rel="stylesheet" href="css/footer_top.css">
 <link rel="stylesheet" href="css/footer_bottom.css">
 <link rel="stylesheet" href="css/productsstyle.css">
+<link rel="stylesheet" href="css/slideshow.css">
 
 
 
@@ -29,231 +32,462 @@
 
 <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
 <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+
+
+
 </head>
 
 
 
 <body>
 
-
 <!-- Header -->
-
 
 <header>
 
 
-  <div class="logo_image">
-    <a href="index.html"><img src="img/eye_black.png" alt="Egyptian Logo"></a>
+
+  <!-- #1 -->
+    <div class="logo_image">
+      <a href="index.html">
+        <img src="img/eye_black.png" alt="Egyptian Logo">
+      </a>
+    </div>
+  
+  <!-- #2 -->
+    <div class="nkosi_text">
+  
+      <a href="index.html"> <h1>NKOSI</h1></a>
+      
+      <span class="copyright">©</span> 
+    </div>
+  
+  
+  
+  
+  <!-- #3 -->
+  
+  
+  
+  
+    <nav>
+  
+     <i class="fa-solid fa-bars" id="bars"></i>
+  
+    
+    <div class="desktop-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="kicksandclothing.html">Shop</a>
+      <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
+    </div>
+  
+  </nav>
+  
+  <button class="cart-button snipcart-checkout"><i class="fa-solid fa-shopping-cart" id="bars"></i>
+  
+  </header>
+  
+  <div class="mobile-menu">
+  
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="kicksandclothing.html">Shop</a>
+    <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
   </div>
-
-
-  <div class="logo_nkosi">
-    <a href="index.html"> <h1>NKOSI</h1></a><span class="copyright">©</span> 
-    <p>Kicks and Clothing</p>
-  </div>
-
   
 
-  <nav>
 
-    <i class="fa-solid fa-bars" id="bars"></i>
+
+</button>
  
-     <div class="dropdown-menu">
-       <a href="index.html">Home</a>
-       <a href="about.html">About</a>
-       <a href="kicksandclothing.html">Shop</a>
-       <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
-     </div>
- 
-   </nav>
-
-   <button class="cart-button snipcart-checkout">🛒</button>
-</header>
 
 
 
- <h1 id="kicks">Shirts & Hoodies</h1>
- <h1 style="text-align: center; background-color: black; color: white;">(Coming Soon! Under Maintenance)</h1>
+
+
+<section class="slideshow-container">
+
+  <div class="slide-imgs">
+    <img src="img/models/models_1.png" class="slide active" alt="Model 1">
+    <img src="img/models/models_2.jpg" class="slide" alt="Model 2">
+    <img src="img/models/models_3.png" class="slide" alt="Model 3">
+    <img src="img/models/models_4.jpg" class="slide" alt="Model 4">
+   <!--  <img src="img/models/models_5.jpg" class="slide" alt="Model 5">-->
+    <img src="img/models/models_6.png" class="slide" alt="Model 6">
+    <img src="img/models/models_7.png" class="slide" alt="Model 7">
+    <img src="img/models/models_8.png" class="slide" alt="Model 8">
+    <img src="img/models/models_9.png" class="slide" alt="Model 9">
+    <img src="img/models/models_10.png" class="slide" alt="Model 10">
+  </div>
+
+  <!-- Static overlay and text -->
+  <div class="slide-overlay"></div>
+  <div class="slide-text">
+    <h2 id="slideTitle">FLOW</h2>
+    <p id="slideNumber">01</p>
+  </div>
+
+  <!-- Arrows -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <!-- Pause/Play -->
+  <button class="pause-play" id="pausePlayBtn">
+    <i class="fa-solid fa-pause"></i>
+  </button>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <!-- <span class="dot"></span> -->
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<div class="nkosi-feature-intro">
+  <h2>Nkosi<span class="copyright" style="font-size: 15px;">©</span>  Merch</h2>
+  <p>
+    Step into the culture. Bold sneakers, statement hoodies, 
+    and iconic shirts—Nkosi merch lets you wear your pride 
+    and rock your legacy. 
+    <b>Premium quality. Urban style. Pure confidence.</b>
+  </p>
+
+  <!-- Shop Now Button -->
+  <a href="kicksandclothing.html" class="shop-now-btn-small">
+    Shop Now
+  </a>
+</div>
+
+
+
+
+
+
+
+
 
  <div class="shop-grid">
 
- <div class="shirts">
-  <!-- Product 1 -->
-  <div class="product-card">
-    <img src="img/shop/shirts/shirt_black.png" alt="Golden T-Shirt">
-    <h2>NKOSI | Black Shirt</h2>
-    <p>100% Cotton</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="gold-shirt"
-      data-item-name="Golden T-Shirt"
-      data-item-price="25.00"
-      data-item-url="/"
-      data-item-description="Luxury gold-themed T-shirt for everyday wear.">
-      Add to Cart
-    </button>
-  </div>
+  <!-- SHOES -->
+  <div class="shoes">
+    <h3> Feature | Kicks </h3>
 
-  <!-- Product 2 -->
-  <div class="product-card">
-    <img src="img/shop/shirts/shirt_brown.png" alt="Gold Hoodie">
-    <h2>NKOSI | Gold Shirt</h2>
-    <p>100% Cotton</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="gold-hoodie"
-      data-item-name="Gold Hoodie"
-      data-item-price="45.00"
-      data-item-url="/"
-      data-item-description="Cozy limited edition gold hoodie.">
-      Add to Cart
-    </button>
-  </div>
-
-  <!-- Product 3 -->
-  <div class="product-card">
-    <img src="img/shop/shirts/shirt_grey.png" alt="Gold Cap">
-    <h2>NKOSI | Grey Shirt</h2>
-    <p>100% Cotton</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="gold-cap"
-      data-item-name="Gold Cap"
-      data-item-price="15.00"
-      data-item-url="/"
-      data-item-description="Classic adjustable cap with gold embroidery.">
-      Add to Cart
-    </button>
-  </div>
-
-  <!-- Product 4 -->
-  <div class="product-card">
-    <img src="img/shop/shirts/shirt_white.png" alt="Gold Cap">
-    <h2>NKOSI | Grey Shirt</h2>
-    <p>100% Cotton</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="gold-cap"
-      data-item-name="Gold Cap"
-      data-item-price="15.00"
-      data-item-url="/"
-      data-item-description="Classic adjustable cap with gold embroidery.">
-      Add to Cart
-    </button>
-  </div>
-
-  <!-- Product 5 -->
-  <div class="product-card">
-    <img src="img/shop/shirts/shirt_black2.png" alt="Gold Cap">
-    <h2>NKOSI | Grey Shirt</h2>
-    <p>100% Cotton</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="gold-cap"
-      data-item-name="Gold Cap"
-      data-item-price="15.00"
-      data-item-url="/"
-      data-item-description="Classic adjustable cap with gold embroidery.">
-      Add to Cart
-    </button>
-  </div>
-
-  <!-- Product 6 -->
-  <div class="product-card">
-    <img src="img/shop/shirts/shirt_red.png" alt="Gold Cap">
-    <h2>NKOSI | Grey Shirt</h2>
-    <p>100% Cotton</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="gold-cap"
-      data-item-name="Gold Cap"
-      data-item-price="15.00"
-      data-item-url="/"
-      data-item-description="Classic adjustable cap with gold embroidery.">
-      Add to Cart
-    </button>
-  </div>
-
-
-
-
-
-  <!-- Product 7 -->
-  <div class="product-card">
-    <img src="img/shop/shirts/shirt_grey2.png" alt="Gold Cap">
-    <h2>NKOSI | Grey Shirt</h2>
-    <p>100% Cotton</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="gold-cap"
-      data-item-name="Gold Cap"
-      data-item-price="15.00"
-      data-item-url="/"
-      data-item-description="Classic adjustable cap with gold embroidery.">
-      Add to Cart
-    </button>
-  </div>
-
-</div> </div> <!-- shirts -->
-
-
-<div class="hoodies">
-  <!-- Product 8 -->
-  <div class="product-card">
-    <img src="img/shop/hoodies/hoodie_brown.png" alt="Gold Cap">
-    <h2>NKOSI | Grey Shirt</h2>
-    <p>100% Cotton</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="gold-cap"
-      data-item-name="Gold Cap"
-      data-item-price="15.00"
-      data-item-url="/"
-      data-item-description="Classic adjustable cap with gold embroidery.">
-      Add to Cart
-    </button>
-  </div>
-
-  <!-- Product 9 -->
-  <div class="product-card">
-    <img src="img/shop/hoodies/hoodie_grey.png" alt="Gold Cap">
-    <h2>NKOSI | Grey Shirt</h2>
-    <p>100% Cotton</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="gold-cap"
-      data-item-name="Gold Cap"
-      data-item-price="15.00"
-      data-item-url="/"
-      data-item-description="Classic adjustable cap with gold embroidery.">
-      Add to Cart
-    </button>
-  </div>
-
-    <!-- Product 10 -->
+    <!-- Product 15 -->
     <div class="product-card">
-      <img src="img/shop/hoodies/hoodie_black.png" alt="Gold Cap">
-      <h2>NKOSI | Grey Shirt</h2>
-      <p>100% Cotton</p>
+      <img src="img/shop/shoes/nkosi_pride_shoes.jpg" alt="Gold and black sneakers with eye">
+      <h2>Nkosi | Prides</h2>
+      <p>Black & Gold</p>
+      <p>$120</p>
       <button
         class="snipcart-add-item"
-        data-item-id="gold-cap"
-        data-item-name="Gold Cap"
-        data-item-price="15.00"
+        data-item-id="nkosi-prides"
+        data-item-name="Nkosi | Prides"
+        data-item-price="120.00"
         data-item-url="/"
-        data-item-description="Classic adjustable cap with gold embroidery.">
+        data-item-description="Premium black and gold sneakers featuring the Nkosi eye design.">
         Add to Cart
       </button>
     </div>
-</div> <!--hoodies -->
+
+    <!-- Product 16 -->
+    <div class="product-card">
+      <img src="img/shop/shoes/nkosi_onyx_shoes.jpg" alt="black sneakers with eye">
+      <h2>Nkosi | Onyx</h2>
+      <p>Panther Black</p>
+      <p>$120</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="nkosi-onyx"
+        data-item-name="Nkosi | Onyx"
+        data-item-price="120.00"
+        data-item-url="/"
+        data-item-description="Sleek all-black Onyx sneakers with signature Nkosi eye emblem.">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <!-- SHIRTS -->
+  <div class="shirts">
+    <h3> Shirts | Revolutionaries of Black Culture</h3>
+
+    <!-- Product 1 -->
+  <!-- Product 1 -->
+<div class="product-card">
+  <img src="img/shop/shirts/shirt_black.png" alt="black shirt">
+  <h2>Revolutionary | Malcolm X</h2>
+  <p>Black</p>
+  <p>$25</p>
+  <button
+    class="snipcart-add-item"
+    data-item-id="shirt-malcolm-black"
+    data-item-name="Revolutionary | Malcolm X"
+    data-item-price="25.00"
+    data-item-url="/"
+    data-item-description="Classic black Malcolm X shirt with bold revolutionary design.">
+    Add to Cart
+  </button>
+</div>
 
 
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="img/shop/shirts/shirt_brown.png" alt="Gold shirt">
+      <h2>Revolutionary | Pharaoh</h2>
+      <p>Gold</p>
+      <p>$25</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="shirt-pharaoh-gold"
+        data-item-name="Revolutionary | Pharaoh"
+        data-item-price="25.00"
+        data-item-url="/"
+        data-item-description="Gold Pharaoh shirt inspired by ancient power and modern pride.">
+        Add to Cart
+      </button>
+    </div>
 
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="img/shop/shirts/shirt_grey.png" alt="grey shirt">
+      <h2>Revolutionary | Haile Selassie</h2>
+      <p>Grey</p>
+      <p>$25</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="shirt-haile-grey"
+        data-item-name="Revolutionary | Haile Selassie"
+        data-item-price="25.00"
+        data-item-url="/"
+        data-item-description="Grey tee featuring Haile Selassie design in tribute to legacy and leadership.">
+        Add to Cart
+      </button>
+    </div>
 
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="img/shop/shirts/shirt_white.png" alt="white shirt">
+      <h2>Revolutionary | Ali</h2>
+      <p>Pure White</p>
+      <p>$25</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="shirt-ali-white"
+        data-item-name="Revolutionary | Ali"
+        data-item-price="25.00"
+        data-item-url="/"
+        data-item-description="White shirt honoring Muhammad Ali, the people's champion.">
+        Add to Cart
+      </button>
+    </div>
 
+    <!-- Product 5 -->
+    <div class="product-card">
+      <img src="img/shop/shirts/shirt_black2.png" alt="black shirt">
+      <h2>Revolutionary | Marcus Garvey</h2>
+      <p>Black</p>
+      <p>$25</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="shirt-garvey-black"
+        data-item-name="Revolutionary | Marcus Garvey"
+        data-item-price="25.00"
+        data-item-url="/"
+        data-item-description="Black tee celebrating Marcus Garvey and the movement of empowerment.">
+        Add to Cart
+      </button>
+    </div>
 
+    <!-- Product 6 -->
+    <div class="product-card">
+      <img src="img/shop/shirts/shirt_red.png" alt="red shirt">
+      <h2>Revolutionary | Khalid Abdul</h2>
+      <p>Red</p>
+      <p>$25</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="shirt-khalid-red"
+        data-item-name="Revolutionary | Khalid Abdul"
+        data-item-price="25.00"
+        data-item-url="/"
+        data-item-description="Red shirt honoring Khalid Abdul Muhammad's powerful message.">
+        Add to Cart
+      </button>
+    </div>
 
-</div> <!--shop-grid -->
+    <!-- Product 7 -->
+    <div class="product-card">
+      <img src="img/shop/shirts/shirt_grey2.png" alt="grey shirt">
+      <h2>Revolutionary | Noble Drew Ali</h2>
+      <p>Grey</p>
+      <p>$25</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="shirt-noble-grey"
+        data-item-name="Revolutionary | Noble Drew Ali"
+        data-item-price="25.00"
+        data-item-url="/"
+        data-item-description="Grey shirt paying homage to Noble Drew Ali and the Moorish legacy.">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <!-- HOODIES -->
+  <div class="hoodies">
+    <h3> Hoodies | Revolutionaries of Black Culture </h3>
+
+    <!-- Product 8 -->
+    <div class="product-card">
+      <img src="img/shop/hoodies/hoodie_brown.png" alt="gold hoodie">
+      <h2>Revolutionary | Pharaoh</h2>
+      <p>Gold</p>
+      <p>$55</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="hoodie-pharaoh-gold"
+        data-item-name="Revolutionary | Pharaoh Hoodie"
+        data-item-price="55.00"
+        data-item-url="/"
+        data-item-description="Gold hoodie featuring Pharaoh artwork and revolutionary spirit.">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="product-card">
+      <img src="img/shop/hoodies/hoodie_grey.png" alt="grey hoodie">
+      <h2>Revolutionary | Noble Drew Ali</h2>
+      <p>Grey</p>
+      <p>$55</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="hoodie-noble-grey"
+        data-item-name="Revolutionary | Noble Drew Ali Hoodie"
+        data-item-price="55.00"
+        data-item-url="/"
+        data-item-description="Grey hoodie honoring Noble Drew Ali, symbolizing knowledge and unity.">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="product-card">
+      <img src="img/shop/hoodies/hoodie_black.png" alt="black hoodie">
+      <h2>Revolutionary | Malcolm X</h2>
+      <p>Black</p>
+      <p>$55</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="hoodie-malcolm-black"
+        data-item-name="Revolutionary | Malcolm X Hoodie"
+        data-item-price="55.00"
+        data-item-url="/"
+        data-item-description="Black hoodie featuring Malcolm X design, symbol of resilience.">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <!-- BEANIES -->
+  <div class="beanies">
+    <h3> Skullies </h3>
+
+    <!-- Product 11 -->
+    <div class="product-card">
+      <img src="img/shop/beanies/black_beanie.jpg" alt="black beanie">
+      <h2>Nkosi Skully</h2>
+      <p>Black</p>
+      <p>$35</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="skully-black"
+        data-item-name="Nkosi Skully (Black)"
+        data-item-price="35.00"
+        data-item-url="/"
+        data-item-description="Black Nkosi skully beanie — minimalist and warm.">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Product 12 -->
+    <div class="product-card">
+      <img src="img/shop/beanies/grey_beanie.jpg" alt="grey beanie">
+      <h2>Nkosi Skully</h2>
+      <p>Grey</p>
+      <p>$35</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="skully-grey"
+        data-item-name="Nkosi Skully (Grey)"
+        data-item-price="35.00"
+        data-item-url="/"
+        data-item-description="Grey Nkosi skully beanie — subtle, stylish, and cozy.">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Product 13 -->
+    <div class="product-card">
+      <img src="img/shop/beanies/yellow_beanie.jpg" alt="Yellow beanie">
+      <h2>Nkosi Skully</h2>
+      <p>Yellow</p>
+      <p>$35</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="skully-yellow"
+        data-item-name="Nkosi Skully (Yellow)"
+        data-item-price="35.00"
+        data-item-url="/"
+        data-item-description="Bright yellow Nkosi skully — warmth with bold attitude.">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <!-- CAPS -->
+  <div class="caps">
+    <h3> Snapback Caps </h3>
+
+    <!-- Product 14 -->
+    <div class="product-card">
+      <img src="img/shop/caps/allcaps.png" alt="Caps">
+      <h2>Nkosi | Caps</h2>
+      <p>Black | White | Denim | Camo</p>
+      <p>$45</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="nkosi-cap"
+        data-item-name="Nkosi Snapback Cap"
+        data-item-price="45.00"
+        data-item-url="/"
+        data-item-description="Black and gold Nkosi snapback cap — bold and adjustable.">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+</div> <!-- shop-grid -->
+
 
 
 
@@ -300,10 +534,14 @@
 
   
 
-
+ <!-- ✅ External JS -->
+ <script src="js/slideshow.js"></script>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+
+
+
 </script>
 
 </body>

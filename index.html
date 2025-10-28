@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/footer_top.css">
 <link rel="stylesheet" href="css/footer_bottom.css">
-
+<link rel="stylesheet" href="css/home_feature.css">
 
 
 
@@ -31,42 +31,74 @@
 <body>
 
 
-<!-- Header -->
+  <!--    <sub>
+    Psalms 82:6  <br><br>
+  </sub>-->
 
+
+
+
+
+<!-- Header -->
 
 <header>
 
 
+
+<!-- #1 -->
   <div class="logo_image">
-    <a href="index.html"><img src="img/eye_black.png" alt="Egyptian Logo"></a>
+    <a href="index.html">
+      <img src="img/eye_black.png" alt="Egyptian Logo">
+    </a>
+  </div>
+
+<!-- #2 -->
+  <div class="nkosi_text">
+
+    <a href="index.html"> <h1>NKOSI</h1></a>
+    
+    <span class="copyright" >©</span> 
   </div>
 
 
-  <div class="logo_nkosi">
-    <a href="index.html"> <h1>NKOSI</h1></a><span class="copyright">©</span> 
-  </div>
+
+
+<!-- #3 -->
+
+
 
 
   <nav>
 
    <i class="fa-solid fa-bars" id="bars"></i>
 
-    <div class="dropdown-menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="kicksandclothing.html">Shop</a>
-      <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
-    </div>
+  
+  <div class="desktop-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="kicksandclothing.html">Shop</a>
+    <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
+  </div>
 
-  </nav>
+</nav>
+
 
 </header>
+
+<div class="mobile-menu">
+
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="kicksandclothing.html">Shop</a>
+  <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
+</div>
+
 
 
 
 <main>
  
-
+<!-- 
   <div class="video_container">
  
     <video id="bgVideo" autoplay muted>
@@ -76,22 +108,66 @@
     </video>
 
       
-  <div class="quote_box">
-
-    <p id="quote">
-      
-      Psalms 82:6  <br><br>
-
-      <sub>
-      I have said, Ye are gods 
-      and all of you are children of the most High.
-    </sub>
-        
-
-    </p>
-  </div>
+ 
 </div>
     
+-->
+
+
+
+
+
+<section class="sneaker-feature">
+  <div class="feature-content">
+    <h1 class="drop-title">THE DROP</h1>
+    <h2 class="drop-subtitle">Empowering Energy. Unstoppable Style.</h2>
+    <p class="drop-text">
+      Introducing the <strong>NKOSI Pride Series</strong> — where hip-hop meets performance.
+      Built for movement, attitude, and the streets.
+    </p>
+    <!-- Snipcart Add to Cart Button -->
+    <button 
+      class="snipcart-add-item add-cart"
+      data-item-id="nkosi-pride-001"
+      data-item-name="Nkosi Pride Sneakers"
+      data-item-price="199.99"
+      data-item-url="/"
+      data-item-description="Limited edition Nkosi Pride sneakers with street-ready style."
+      data-item-image="img/shop/shoes/nkosi_pride_shoes.jpg">
+      Add to Cart
+    </button>
+  </div>
+  
+     <!-- Shop Now Button -->
+  <a href="kicksandclothing.html" class="shop-now">
+    View Store
+  </a>
+  
+  <div class="feature-image">
+    <img src="/img/nkosi_pride_shoes.png" alt="Nkosi Pride Sneakers">
+  </div>
+</section>
+
+
+
+<div class="quote_box">
+
+  <p id="quote">
+    
+    Psalms 82:6: I have said, Ye are gods and all of you are children of the most High. 
+
+  </p>
+</div>
+
+
+
+
+<h2 style="color: #fff; 
+margin-top: 5%; 
+padding: 3%; 
+background-color: #222222;">
+Discover Nkosi !
+</h2>
 
         <div class="middle-box">
 
@@ -132,6 +208,19 @@
                 </div>
               </div>
             </a>
+
+                  <!-- Message-->
+                  <a href="about.html" target="_blank">
+                    <div class="card">
+                      <img src="img/malik_square.jpg" alt="Music Image">
+                          <div class="font_and_symbol">
+                        <i class="fas fa-book"></i>
+                      <p>His Story</p>
+                      <p style="font-size: 10px;">Learn About the Real Nkosi</p>
+                    </div>
+                  </div>
+                </a>
+    
 
 
           </div>
@@ -209,6 +298,10 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
+<script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
+
 
 </body>
 </html>

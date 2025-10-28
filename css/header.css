@@ -1,172 +1,156 @@
+ 
 
-  /*--*HEADER > LOGO > NAV > LINKS > QUOTE*-------------------------------------------------------*/
 
-  header {
-    /*Structure*/
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 1%;
-   
-
-    /*Art*/
-    min-height: 100px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between; 
-    border-bottom: 2px solid #020202;
-    
-  }
-  
- /*--*LOGO*-------------------------------------------------------*/
- .logo_image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: pulseHipHop 1.5s infinite;
-  max-width: 100px;
-  padding: 10%;
-  
+/*--*HEADER > LOGO > NAV > LINKS > QUOTE*-------------------------------------------------------*/
+header {
+  /*Structure*/
+   display: flex;
+   height: 72px;
+   width: 100%;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: .1px solid #020202;
 }
-
+/*--*LOGO*-------------------------------------------------------*/
+.logo_image {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   animation: pulseHipHop 1.5s infinite;
+   max-width: 43px;
+   justify-content:flex-start;
+   margin-left: 1%;
+}
+.logo_image img {
+   width: 4rem;
+   height: auto;
+}
 @keyframes pulseHipHop {
-  0% {
-    transform: scale(1);
-    filter: drop-shadow(0 0 0px #fff);
+   0% {
+       transform: scale(1);
+       filter: drop-shadow(0 0 0px #fff);
   }
-  25% {
-    transform: scale(1.1) rotate(-2deg);
-    filter: drop-shadow(0 0 10px #e6b30c);
+   25% {
+       transform: scale(1.1) rotate(-2deg);
+       filter: drop-shadow(0 0 10px #e6b30c);
   }
-  50% {
-    transform: scale(1.15) rotate(2deg);
-    filter: drop-shadow(0 0 20px #ffffff);
+   50% {
+       transform: scale(1.15) rotate(2deg);
+       filter: drop-shadow(0 0 20px #ffffff);
   }
-  75% {
-    transform: scale(1.1) rotate(-1deg);
-    filter: drop-shadow(0 0 10px #e6b30c);
+   75% {
+       transform: scale(1.1) rotate(-1deg);
+       filter: drop-shadow(0 0 10px #e6b30c);
   }
-  100% {
-    transform: scale(1) rotate(0deg);
-    filter: drop-shadow(0 0 0px #fff);
+   100% {
+       transform: scale(1) rotate(0deg);
+       filter: drop-shadow(0 0 0px #fff);
   }
 }
-
-  
-  .logo_nkosi {
-    display: flex;               
-    align-items: center; 
-    place-self: center; 
-    padding: 1%;
-    gap: 0.25rem;                
-    font-size: clamp(.8rem, 2vw, 1.2rem);
-    
-  }
-  
-  .logo_nkosi .copyright {
-    font-size: 0.9em;            
-    opacity: 0.8;   
-    margin-top: 10px;
-  }
-  
-  
-  .logo_image img {
-    width: clamp(60px, 10vw, 200px); 
-    height: auto;
-  }
-  
-  .logo_nkosi a {
-    color: black;
-    transition: color 0.4s ease, background-color 0.3s ease;
-  }
-
-  .logo_nkosi a:hover {
-    color: goldenrod;
-    filter: drop-shadow(3px 0 2px #000);
-  }
+.nkosi_text {
+   display: flex;
+   font-size: clamp(.8rem, 2vw, 1.2rem) ;
+   width: 100%;
+   max-width: 70px;
+   
+   justify-content: left;
+   
+}
+h1 {
+   font-family: 'Egypt';
+}
+.nkosi_text .copyright {
+   font-size: 0.7em;
+   opacity: 0.8;
+   margin-top: 15px;
+}
+.nkosi_text a {
+   color: black;
+   transition: color 0.4s ease, background-color 0.3s ease;
+}
+.nkosi_text a:hover {
+   color: goldenrod;
+   filter: drop-shadow(3px 0 2px #000);
+}
 
 
 /*--NAV > MENU*-------------------------------------------------------*/
-
-  /* Dropdown Menu */
-  nav {
-    
-    position: relative;
-    cursor: pointer;
-    padding: 1%;
-    max-width: 75px;
-    left: 50%;
-    padding: 1rem;
- 
-
-  }
-  
-  /*
-  .dropdown span {
-    font-size: 1.5rem;
-  }
-  */
-  
-  .dropdown-menu {
-    opacity: 0;                /* invisible initially */
-    visibility: hidden; 
-    position: absolute;
-    left: 0; 
-    top: 100%; 
+.desktop-menu {
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   background-color: #000;
+   line-height: 1; 
+   height: 33px; 
+   width: 100%;
+   padding: 0 2rem; 
 
    
-    width: 100%;
-    background-color: rgba(0,0,0,0.8);
-
-    border: 1px solid goldenrod;
-    z-index: 2;
-
-    transition: opacity 0.3s ease, transform 0.8s ease;
-    transform: translateY(-10px); /* slide up initially */
-    border-radius: 8px;
- 
-    text-shadow:
-    0 0 .5px #FFD700,
-    0 0 1px #FFD700,
-    0 0 2px #FFA500,
-    0 0 4px #FFA500; 
-
-    box-shadow:
-    0 0 1px #FFD700,
-    0 0 2px #FFD700,
-    0 0 5px #FFA500,
-    0 0 7px #FFA500; 
+}
+.desktop-menu a {
+   padding:0;
+   margin: 2%;
+   text-shadow: .5px rgb(84, 83, 83) ;
+   color: #fff;
+   
+}
+.desktop-menu a:hover {
+   color: gold;
+}
+/*|||||||||| LINKS: MOBILE |||||||||||*/
+.mobile-menu {
+   display: none;
+   height: 100%;
+   width: 100%;
+   text-align: center;
+   color: #000;
+}
+#bars {
+   display: none;
+   font-size: 2rem;
+   margin-right: 20px;
+   cursor: pointer;
+   width: 100%;
+   
 }
 
+/*|||||||||| MOBILE |||||||||||*/
 
-  
-  .dropdown-menu a {
-    display: block;
-    align-items: center;
-    text-align: center;
-    padding: 12px 16px;
-
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+@media screen and (max-width: 738px) {
+  #bars  {
+       display: block;
+       
   }
-  
-  .dropdown-menu a:hover {
-    background-color: rgba(255,255,255,0.1);
+   .desktop-menu {
+       display: none;
   }
-  
-  nav:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0); /* slide into place */
-
-    
+  #bars img {
+       display: flex;
+       width: 15%;
+       filter: invert(100);
+       float: right;
   }
-
-  #bars {
-
-    font-size: 2rem;
+   .mobile-menu {
+       display: block;
+       width: 100%;
+       font-size: 1rem;
+       z-index: 1;
   }
-
-
-
+   .mobile-menu a {
+      background-color: black;
+       width: 100%;
+       display: block;
+       padding: 3%;
+       font-weight: bold;
+       transition: 10ms;
+       border-bottom: .1px #ffffff49 solid;
+  }
+   .mobile-menu li {
+       background-color: none;
+       width: 100%;
+  }
+   .mobile-menu a:hover {
+       background-color: #fff;
+       color: black;
+  }
+}

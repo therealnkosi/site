@@ -5,12 +5,12 @@
   /* ===== Grid Layout ===== */
   .shop-grid {
     display: grid;
-    grid-template-columns: auto; /* 3 columns */
-   
+    grid-template-columns: auto; 
+   grid-template-rows: auto;
     gap: 30px;
- 
-    background-color: #0d0d0d;
-    color: white;
+
+    background-color: #fff;
+    color: #000;
     padding: 5%;
     justify-items: center;  
     align-items: center;
@@ -19,7 +19,34 @@
   }
 
 
+  .nkosi-feature-intro {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 700px;
+    color: #0e0c0c;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10%;
+    border-bottom: 1px black solid;
+  }
+  
+  .nkosi-feature-intro h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+  
+  .nkosi-feature-intro p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #474444;
+    margin-bottom: 15px;
+  }
 
+
+
+
+  
 #kicks {
 
   background-color: #0d0d0d;
@@ -36,8 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    height: 20rem;
+    height: 25rem;
     width: 100%;
     max-width: 15rem;
     margin-top: 5rem; 
@@ -60,7 +86,7 @@
   }
 
   .product-card h2 {
-    font-size: clamp(0.7rem, 1.8vw, 1.2rem);
+    font-size: clamp(0.7rem, 1.4vw, 1.0rem);
     color: #fff;
     margin-bottom: 10px;
   }
@@ -75,17 +101,41 @@
 
  .shirts, .hoodies, .beanies, .shoes, .caps {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 5%;
+}
+
+.caps {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  
 }
 
 
 
 
 
+.shoes {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 5%;
+}
 
+
+
+ h3 {
+
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+
+}
 
 
 
@@ -105,6 +155,7 @@
     letter-spacing: 1px;
     transition: all 0.3s ease;
     width: 100%;
+    font-size: clamp(0.9rem, 2.0vw, 1.0rem);
   }
 
   .snipcart-add-item:hover {
@@ -115,10 +166,10 @@
 
   /* ===== Cart Button (Optional Navbar) ===== */
   .cart-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #000000;
+   
+    top: 20;
+    right: 20;
+    background: transparent;
     color: #000;
     border: none;
     border-radius: 50%;
@@ -134,13 +185,23 @@
     transform: scale(1.1);
   }
 
-  @media (max-width: 600px) {
+
+
+  
+  @media (max-width: 800px) {
     .cart-button {
       top: 10px;
       right: 10px;
     }
 
-
+    .shirts, .hoodies, .beanies, .shoes, .caps {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 5%;
+    }
+    
   
 
   }
