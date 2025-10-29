@@ -166,7 +166,7 @@
 
   /* ===== Cart Button (Optional Navbar) ===== */
   .cart-button {
-   
+   position: fixed;
     top: 20;
     right: 20;
     background: transparent;
