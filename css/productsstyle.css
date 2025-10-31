@@ -246,6 +246,59 @@ background: #fff;
 }
 
 
+.inquire {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 2%;
+
+
+
+}
+
+/* ||||||||||||| MAINTENANCE |||||||||||||||||*/
+
+
+.maintenance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  padding: 20px;
+  background: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.maintenance-content {
+  max-width: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.maintenance-icon {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
 
 
 
