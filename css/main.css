@@ -51,7 +51,6 @@ section p {
 
 
 
-  
 
   @keyframes glowPulse {
     0%, 100% {
@@ -71,6 +70,22 @@ section p {
   }
 
 
+
+  @keyframes glowPulse2 {
+    0%, 100% {
+      text-shadow:
+        0 0 5px rgb(214, 181, 96),
+      
+        0 0 20px #FFA500,
+        0 0 30px #cfb129;
+    }
+    50% {
+      text-shadow:
+        0 0 2px #FFD700,
+        0 0 10px #FFD700,
+     
+    }
+  }
 
 
 
@@ -121,6 +136,11 @@ section p {
   width: 100%;
   gap: 1%;
   
+  background: 
+  linear-gradient(135deg, #ffffff 40%, #ffffff 100%),
+  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><text x="0" y="40" font-size="40" fill="rgba(0,0,0,0.1)">𓀀𓂀𓃀</text></svg>') repeat;
+background-blend-mode: overlay;
+  
 }
 
 .middle-box a {
@@ -141,7 +161,10 @@ section p {
   margin: 1rem;
   gap: 3%;
 
-  background: #222121;
+  background: linear-gradient(135deg, #000 40%, #111 100%),
+  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><text x="0" y="40" font-size="40" fill="rgba(255,255,255,0.05)">𓀀𓂀𓃀</text></svg>') repeat;
+background-blend-mode: overlay;;
+
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
   transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
@@ -239,6 +262,17 @@ section p {
 }
 
 
+#discover {
+color: #fff; 
+border-radius: 8px;
+margin-top: 5%; 
+padding: 3%; 
+background: 
+    linear-gradient(135deg, #1e1e1e, #573a12, #ffcc33),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><text x="0" y="40" font-size="40" fill="rgba(255,255,255,0.05)">𓀀𓂀𓃀</text></svg>') repeat;
+  background-blend-mode: overlay;
+  box-shadow: 0 4px 15px rgba(34, 33, 30, 0.63);
+}
 
 
 

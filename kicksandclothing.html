@@ -43,63 +43,56 @@
 
 <!-- Header -->
 
+<!-- Header -->
+
 <header>
 
+  <i class="fa-solid fa-bars" id="bars"></i>
+
+  <div class="logo_group">
+  <div class="logo_image">
+    <img src="/img/eye_black.png" alt="Nkosi Logo">
+  </div>
 
 
-  <!-- #1 -->
-    <div class="logo_image">
-      <a href="index.html">
-        <img src="img/eye_black.png" alt="Egyptian Logo">
-      </a>
-    </div>
-  
-  <!-- #2 -->
-    <div class="nkosi_text">
-  
-      <a href="index.html"> <h1>NKOSI</h1></a>
-      
-      <span class="copyright">©</span> 
-    </div>
-  
-  
-  
-  
-  <!-- #3 -->
-  
-  
-  
-  
-    <nav>
-  
-     <i class="fa-solid fa-bars" id="bars"></i>
-  
-    
-    <div class="desktop-menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="kicksandclothing.html">Shop</a>
-      <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
-    </div>
-  
-  </nav>
-  
-  <button class="cart-button snipcart-checkout"><i class="fa-solid fa-shopping-cart" id="bars"></i>
-  
-  </header>
-  
-  <div class="mobile-menu">
-  
+  <div class="nkosi_text">
+    <p>The Real</p>
+    <h1><a href="index.html">NKOSI </a></h1>
+    <p>Kicks 'n Clothing</p>
+  </div>
+</div>
+
+  <div class="desktop-menu">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html">Bio</a>
     <a href="kicksandclothing.html">Shop</a>
     <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
+ 
+       <!-- Snipcart cart button -->
+       <a href="#" class="snipcart-checkout">
+        <i class="fas fa-shopping-cart" id="cart"></i>
+        <span class="snipcart-items-count">0</span>
+    </a>
+
   </div>
-  
 
 
+ </header>
 
-</button>
+   <!-- Snipcart cart button -->
+   <a href="#" class="snipcart-checkout mobile-cart">
+    <i class="fas fa-shopping-cart" id="cart"></i>
+    <span class="snipcart-items-count">0</span>
+</a>
+
+
+ <div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">Bio</a>
+  <a href="kicksandclothing.html">Shop</a>
+  <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
+</div>
+
  
 
 
@@ -108,18 +101,30 @@
 
 <section class="slideshow-container">
 
+  <div class="music-player">
+    <audio controls autoplay muted loop id="audio" style="top: 1%;" >
+      <source src="mp4/The_NKOSI_ONYX - Short.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  
+
+  </div>
+
   <div class="slide-imgs">
     <img src="img/models/models_1.png" class="slide active" alt="Model 1">
-    <img src="img/models/models_2.jpg" class="slide" alt="Model 2">
-    <img src="img/models/models_3.png" class="slide" alt="Model 3">
-    <img src="img/models/models_4.jpg" class="slide" alt="Model 4">
-   <!--  <img src="img/models/models_5.jpg" class="slide" alt="Model 5">-->
-    <img src="img/models/models_6.png" class="slide" alt="Model 6">
-    <img src="img/models/models_7.png" class="slide" alt="Model 7">
-    <img src="img/models/models_8.png" class="slide" alt="Model 8">
-    <img src="img/models/models_9.png" class="slide" alt="Model 9">
-    <img src="img/models/models_10.png" class="slide" alt="Model 10">
+    <img src="img/models/models_3.png" class="slide" alt="Model 2">
+    <img src="img/models/models_2.jpg" class="slide" alt="Model 3">
+    <img src="img/models/models_10.png" class="slide" alt="Model 4">
+    <img src="img/models/onyx_shoes.png" class="slide" alt="Model 5">
+    <img src="/img/models/models_5.jpg" class="slide" alt="Model 6">
+    <img src="img/models/models_6.png" class="slide" alt="Model 7">
+    <img src="img/models/models_7.png" class="slide" alt="Model 8">
+    <img src="img/models/models_8.png" class="slide" alt="Model 9">
+    <img src="img/models/models_9.png" class="slide" alt="Model 10">
+    <img src="img/models/nkosi_fit.jpg" class="slide" alt="Model 11">
   </div>
+
+ 
 
   <!-- Static overlay and text -->
   <div class="slide-overlay"></div>
@@ -148,7 +153,8 @@
     <span class="dot"></span>
     <span class="dot"></span>
     <span class="dot"></span>
-    <!-- <span class="dot"></span> -->
+    <span class="dot"></span> 
+    <span class="dot"></span> 
   </div>
 
 </section>
@@ -163,11 +169,11 @@
 
 
 <div class="nkosi-feature-intro">
-  <h2>Nkosi<span class="copyright" style="font-size: 15px;">©</span>  Merch</h2>
+  <h2>Nkosi<span class="copyright" style="font-size: 15px;">©</span> Kicks 'n Clothing</h2>
   <p>
-    Step into the culture. Bold sneakers, statement hoodies, 
-    and iconic shirts—Nkosi merch lets you wear your pride 
-    and rock your legacy. 
+    Step into the culture. Bold sneakers, hoodies, 
+    and iconic shirts—Nkosi lets you wear your pride 
+    and rock your legacy. <br><br>
     <b>Premium quality. Urban style. Pure confidence.</b>
   </p>
 
@@ -185,308 +191,452 @@
 
 
 
- <div class="shop-grid">
+<div class="shop-grid">
 
   <!-- SHOES -->
   <div class="shoes">
-    <h3> Feature | Kicks </h3>
+    <h3> Kicks 
+      <p id="product-subline">“Walk in divine balance — our African/Egyptian-themed Shoes, designed by Nkosi himself, embody the movement’s truth, order, and timeless power.”</p>
+    </h3>
 
-    <!-- Product 15 -->
+    <!-- Nkosi Prides -->
     <div class="product-card">
       <img src="img/shop/shoes/nkosi_pride_shoes.jpg" alt="Gold and black sneakers with eye">
       <h2>Nkosi | Prides</h2>
       <p>Black & Gold</p>
       <p>$120</p>
-      <button
-        class="snipcart-add-item"
+
+      <!-- Size Selection -->
+      <label for="size-prides" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-prides" class="size-select">
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="nkosi-prides"
         data-item-name="Nkosi | Prides"
         data-item-price="120.00"
-        data-item-url="/"
-        data-item-description="Premium black and gold sneakers featuring the Nkosi eye design.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Premium black and gold sneakers featuring the Nkosi eye design."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="7|8|9|10|11|12|13"
+        data-item-custom1-value="7">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/shoes/nkosi_pride_shoes.jpg','Nkosi | Prides','Black & Gold — $120')">Quick View</button>
     </div>
 
-    <!-- Product 16 -->
+    <!-- Nkosi Onyx -->
     <div class="product-card">
       <img src="img/shop/shoes/nkosi_onyx_shoes.jpg" alt="black sneakers with eye">
       <h2>Nkosi | Onyx</h2>
       <p>Panther Black</p>
       <p>$120</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-onyx" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-onyx" class="size-select">
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="nkosi-onyx"
         data-item-name="Nkosi | Onyx"
         data-item-price="120.00"
-        data-item-url="/"
-        data-item-description="Sleek all-black Onyx sneakers with signature Nkosi eye emblem.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Sleek all-black Onyx sneakers with signature Nkosi eye emblem."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="7|8|9|10|11|12|13"
+        data-item-custom1-value="7">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/shoes/nkosi_onyx_shoes.jpg','Nkosi | Onyx','Panther Black — $120')">Quick View</button>
     </div>
   </div>
 
   <!-- SHIRTS -->
   <div class="shirts">
-    <h3> Shirts | Revolutionaries of Black Culture</h3>
+    <h3> Shirts 
+      <p id="product-subline">“Wear the movement — our Shirts honor the Revolutionaries of the Culture, inspired by the power and legacy of Black revolutionary leaders.”</p>
+    </h3>
 
-    <!-- Product 1 -->
-  <!-- Product 1 -->
-<div class="product-card">
-  <img src="img/shop/shirts/shirt_black.png" alt="black shirt">
-  <h2>Revolutionary | Malcolm X</h2>
-  <p>Black</p>
-  <p>$25</p>
-  <button
-    class="snipcart-add-item"
-    data-item-id="shirt-malcolm-black"
-    data-item-name="Revolutionary | Malcolm X"
-    data-item-price="25.00"
-    data-item-url="/"
-    data-item-description="Classic black Malcolm X shirt with bold revolutionary design.">
-    Add to Cart
-  </button>
-</div>
-
-
-    <!-- Product 2 -->
+    <!-- Shirt: Malcolm X -->
     <div class="product-card">
-      <img src="img/shop/shirts/shirt_brown.png" alt="Gold shirt">
-      <h2>Revolutionary | Pharaoh</h2>
-      <p>Gold</p>
+      <img src="img/shop/shirts/shirt_black.png" alt="black shirt">
+      <h2>Revolutionary | Malcolm X</h2>
+      <p>Panther Black</p>
       <p>$25</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-malcolm" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-malcolm" class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
+        data-item-id="shirt-malcolm-black"
+        data-item-name="Revolutionary | Malcolm X"
+        data-item-price="25.00"
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Classic black Malcolm X shirt with bold revolutionary design."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
+        Add to Cart
+      </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/shirts/shirt_black.png','Revolutionary | Malcolm X','Panther Black — $25')">Quick View</button>
+    </div>
+
+    <!-- Shirt: Pharaoh -->
+    <div class="product-card">
+      <img src="img/shop/shirts/shirt_brown.png" alt="Egyptian tan shirt">
+      <h2>Revolutionary | Pharaoh</h2>
+      <p>Egyptian Sand Brown</p>
+      <p>$25</p>
+
+      <label for="size-pharaoh" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-pharaoh" class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="shirt-pharaoh-gold"
         data-item-name="Revolutionary | Pharaoh"
         data-item-price="25.00"
-        data-item-url="/"
-        data-item-description="Gold Pharaoh shirt inspired by ancient power and modern pride.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Gold Pharaoh shirt inspired by ancient power and modern pride."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/shirts/shirt_brown.png','Revolutionary | Pharaoh','Egyptian Sand Brown — $25')">Quick View</button>
     </div>
 
-    <!-- Product 3 -->
+    <!-- Shirt: Haile Selassie -->
     <div class="product-card">
       <img src="img/shop/shirts/shirt_grey.png" alt="grey shirt">
       <h2>Revolutionary | Haile Selassie</h2>
-      <p>Grey</p>
+      <p>Platinum Grey</p>
       <p>$25</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-haile" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-haile" class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="shirt-haile-grey"
         data-item-name="Revolutionary | Haile Selassie"
         data-item-price="25.00"
-        data-item-url="/"
-        data-item-description="Grey tee featuring Haile Selassie design in tribute to legacy and leadership.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Grey tee featuring Haile Selassie design in tribute to legacy and leadership."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/shirts/shirt_grey.png','Revolutionary | Haile Selassie','Platinum Grey — $25')">Quick View</button>
     </div>
 
-    <!-- Product 4 -->
+    <!-- Shirt: Ali -->
     <div class="product-card">
       <img src="img/shop/shirts/shirt_white.png" alt="white shirt">
       <h2>Revolutionary | Ali</h2>
-      <p>Pure White</p>
+      <p>Angel White</p>
       <p>$25</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-ali" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-ali" class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="shirt-ali-white"
         data-item-name="Revolutionary | Ali"
         data-item-price="25.00"
-        data-item-url="/"
-        data-item-description="White shirt honoring Muhammad Ali, the people's champion.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="White shirt honoring Muhammad Ali, the people's champion."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/shirts/shirt_white.png','Revolutionary | Ali','Angel White — $25')">Quick View</button>
     </div>
 
-    <!-- Product 5 -->
+    <!-- Shirt: Marcus Garvey -->
     <div class="product-card">
       <img src="img/shop/shirts/shirt_black2.png" alt="black shirt">
       <h2>Revolutionary | Marcus Garvey</h2>
-      <p>Black</p>
+      <p>Panther Black</p>
       <p>$25</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-garvey" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-garvey" class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="shirt-garvey-black"
         data-item-name="Revolutionary | Marcus Garvey"
         data-item-price="25.00"
-        data-item-url="/"
-        data-item-description="Black tee celebrating Marcus Garvey and the movement of empowerment.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Black tee celebrating Marcus Garvey and the movement of empowerment."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/shirts/shirt_black2.png','Revolutionary | Marcus Garvey','Panther Black — $25')">Quick View</button>
     </div>
 
-    <!-- Product 6 -->
+    <!-- Shirt: Khalid Abdul -->
     <div class="product-card">
       <img src="img/shop/shirts/shirt_red.png" alt="red shirt">
       <h2>Revolutionary | Khalid Abdul</h2>
-      <p>Red</p>
+      <p>Fire Red</p>
       <p>$25</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-khalid" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-khalid" class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="shirt-khalid-red"
         data-item-name="Revolutionary | Khalid Abdul"
         data-item-price="25.00"
-        data-item-url="/"
-        data-item-description="Red shirt honoring Khalid Abdul Muhammad's powerful message.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Red shirt honoring Khalid Abdul Muhammad's powerful message."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/shirts/shirt_red.png','Revolutionary | Khalid Abdul','Fire Red — $25')">Quick View</button>
     </div>
 
-    <!-- Product 7 -->
+    <!-- Shirt: Noble Drew Ali -->
     <div class="product-card">
       <img src="img/shop/shirts/shirt_grey2.png" alt="grey shirt">
       <h2>Revolutionary | Noble Drew Ali</h2>
-      <p>Grey</p>
+      <p>Platinum Grey</p>
       <p>$25</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-noble" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-noble" class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="shirt-noble-grey"
         data-item-name="Revolutionary | Noble Drew Ali"
         data-item-price="25.00"
-        data-item-url="/"
-        data-item-description="Grey shirt paying homage to Noble Drew Ali and the Moorish legacy.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Grey shirt paying homage to Noble Drew Ali and the Moorish legacy."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/shirts/shirt_grey2.png','Revolutionary | Noble Drew Ali','Platinum Grey — $25')">Quick View</button>
     </div>
   </div>
 
   <!-- HOODIES -->
   <div class="hoodies">
-    <h3> Hoodies | Revolutionaries of Black Culture </h3>
+    <h3> Hoodies 
+      <p id="product-subline">“Wear the movement — our Hoodies honor the Revolutionaries of the Culture, inspired by the power and legacy of Black revolutionary leaders.”</p>
+    </h3>
 
-    <!-- Product 8 -->
+    <!-- Hoodie: Pharaoh -->
     <div class="product-card">
       <img src="img/shop/hoodies/hoodie_brown.png" alt="gold hoodie">
       <h2>Revolutionary | Pharaoh</h2>
-      <p>Gold</p>
+      <p>Egyptian Sand Brown</p>
       <p>$55</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-hoodie-pharaoh" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-hoodie-pharaoh" class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="hoodie-pharaoh-gold"
         data-item-name="Revolutionary | Pharaoh Hoodie"
         data-item-price="55.00"
-        data-item-url="/"
-        data-item-description="Gold hoodie featuring Pharaoh artwork and revolutionary spirit.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Gold hoodie featuring Pharaoh artwork and revolutionary spirit."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/hoodies/hoodie_brown.png','Revolutionary | Pharaoh','Egyptian Sand Brown — $55')">Quick View</button>
     </div>
 
-    <!-- Product 9 -->
+    <!-- Hoodie: Noble Drew Ali -->
     <div class="product-card">
       <img src="img/shop/hoodies/hoodie_grey.png" alt="grey hoodie">
       <h2>Revolutionary | Noble Drew Ali</h2>
-      <p>Grey</p>
+      <p>Platinum Grey</p>
       <p>$55</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-hoodie-noble" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-hoodie-noble" class="size-select" margin-bottom:5px;>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="hoodie-noble-grey"
         data-item-name="Revolutionary | Noble Drew Ali Hoodie"
         data-item-price="55.00"
-        data-item-url="/"
-        data-item-description="Grey hoodie honoring Noble Drew Ali, symbolizing knowledge and unity.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Grey hoodie honoring Noble Drew Ali, symbolizing knowledge and unity."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/hoodies/hoodie_grey.png','Revolutionary | Noble Drew Ali','Platinum Grey — $55')">Quick View</button>
     </div>
 
-    <!-- Product 10 -->
+    <!-- Hoodie: Malcolm X -->
     <div class="product-card">
       <img src="img/shop/hoodies/hoodie_black.png" alt="black hoodie">
       <h2>Revolutionary | Malcolm X</h2>
-      <p>Black</p>
+      <p>Panther Black</p>
       <p>$55</p>
-      <button
-        class="snipcart-add-item"
+
+      <label for="size-hoodie-malcolm" style="display:block;margin-bottom:5px;" class="size-style">Size:</label>
+      <select id="size-hoodie-malcolm" class="size-select" margin-bottom:5px;>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+      </select>
+
+      <button class="snipcart-add-item"
         data-item-id="hoodie-malcolm-black"
         data-item-name="Revolutionary | Malcolm X Hoodie"
         data-item-price="55.00"
-        data-item-url="/"
-        data-item-description="Black hoodie featuring Malcolm X design, symbol of resilience.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Classic black hoodie celebrating Malcolm X and his legacy."
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL|2XL"
+        data-item-custom1-value="S">
         Add to Cart
       </button>
-    </div>
-  </div>
 
-  <!-- BEANIES -->
-  <div class="beanies">
-    <h3> Skullies </h3>
-
-    <!-- Product 11 -->
-    <div class="product-card">
-      <img src="img/shop/beanies/black_beanie.jpg" alt="black beanie">
-      <h2>Nkosi Skully</h2>
-      <p>Black</p>
-      <p>$35</p>
-      <button
-        class="snipcart-add-item"
-        data-item-id="skully-black"
-        data-item-name="Nkosi Skully (Black)"
-        data-item-price="35.00"
-        data-item-url="/"
-        data-item-description="Black Nkosi skully beanie — minimalist and warm.">
-        Add to Cart
-      </button>
+      <button class="quick-view-btn" onclick="openPreview('img/shop/hoodies/hoodie_black.png','Revolutionary | Malcolm X','Panther Black — $55')">Quick View</button>
     </div>
 
-    <!-- Product 12 -->
-    <div class="product-card">
-      <img src="img/shop/beanies/grey_beanie.jpg" alt="grey beanie">
-      <h2>Nkosi Skully</h2>
-      <p>Grey</p>
-      <p>$35</p>
-      <button
-        class="snipcart-add-item"
-        data-item-id="skully-grey"
-        data-item-name="Nkosi Skully (Grey)"
-        data-item-price="35.00"
-        data-item-url="/"
-        data-item-description="Grey Nkosi skully beanie — subtle, stylish, and cozy.">
-        Add to Cart
-      </button>
-    </div>
-
-    <!-- Product 13 -->
-    <div class="product-card">
-      <img src="img/shop/beanies/yellow_beanie.jpg" alt="Yellow beanie">
-      <h2>Nkosi Skully</h2>
-      <p>Yellow</p>
-      <p>$35</p>
-      <button
-        class="snipcart-add-item"
-        data-item-id="skully-yellow"
-        data-item-name="Nkosi Skully (Yellow)"
-        data-item-price="35.00"
-        data-item-url="/"
-        data-item-description="Bright yellow Nkosi skully — warmth with bold attitude.">
-        Add to Cart
-      </button>
-    </div>
   </div>
 
   <!-- CAPS -->
   <div class="caps">
-    <h3> Snapback Caps </h3>
+    <h3> Snapback Caps 
+      <p id="product-subline">Top off your fit with our Snapback Caps — bold attitude, perfect fit.</p>
+    </h3>
 
-    <!-- Product 14 -->
+    <!-- Cap: Nkosi Angel White -->
     <div class="product-card">
       <img src="img/shop/caps/allcaps.png" alt="Caps">
       <h2>Nkosi | Caps</h2>
-      <p>Black | White | Denim | Camo</p>
       <p>$45</p>
-      <button
-        class="snipcart-add-item"
-        data-item-id="nkosi-cap"
+
+      <label for="size-cap-white" style="display:block; margin-bottom:5px; color: white; font-size: 15px;" class="size-style">Style:</label>
+      
+      <select id="size-cap-white" class="size-select" style="margin-bottom: 5px;">
+        <option value="White">Angel White</option>
+        <option value="Blue">Blue Denim</option>
+        <option value="Black">Panther Black</option>
+        <option value="Camo">Soldier Camo</option>
+
+
+      </select>
+
+      <button class="snipcart-add-item"
+        data-item-id="nkosi-cap-white"
         data-item-name="Nkosi Snapback Cap"
         data-item-price="45.00"
-        data-item-url="/"
-        data-item-description="Black and gold Nkosi snapback cap — bold and adjustable.">
+        data-item-url="https://therealnkosi.com/kicksandclothing.html" 
+        data-item-description="Black and gold Nkosi snapback cap — bold and adjustable."
+        data-item-custom1-name="Style"
+        data-item-custom1-options="Angel White | Blue Denim | Panther Black | Soldier Camo"
+        data-item-custom1-value="One Size">
         Add to Cart
       </button>
+
+      <button class="quick-view-btn" onclick="openPreview('img/shop/caps/allcaps.png','Nkosi | Snapback Caps',' — $45')">Quick View</button>
     </div>
+
+
+
+
   </div>
 
-</div> <!-- shop-grid -->
+
+</div>
 
 
 
@@ -494,6 +644,20 @@
 
 
 
+
+<!-- JS to sync dropdowns with Snipcart custom value -->
+<script>
+document.querySelectorAll('.product-card').forEach(card => {
+  const select = card.querySelector('.size-select');
+  const button = card.querySelector('.snipcart-add-item');
+
+  if(select && button){
+    select.addEventListener('change', ()=>{
+      button.setAttribute('data-item-custom1-value', select.value);
+    });
+  }
+});
+</script>
 
 
 
@@ -523,26 +687,66 @@
 
         
         <div class="artist-profile">
-            <h2>@NKOSI-777</h2>
-            <p>Recording Artist, Songwriter,  Music Producer</p> <br>
-            <p>© 2025 NKOSI. All rights reserved. Website by <a href="www.mikoson.com">mikeson designs.</a></p>
-          </div>
+          <h2>@NKOSI-777</h2>
+          <p> Recording Artist, Songwriter, Music Producer, Motivational Speaker, Fashion Designer</p> 
+          <p>Contact @ nkositheking7@gmail.com</p><br>
+          <p>© 2025 NKOSI. All rights reserved. Website by <a href="www.mikoson.com">mikeson designs.</a></p>
+        </div>
         </footer>
-
-
 
 
   
 
  <!-- ✅ External JS -->
  <script src="js/slideshow.js"></script>
+ <script src="js/cart.js"></script>
+
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
-
-
-
 </script>
+
+
+<script>
+
+audio.muted = true;
+audio.play().then(() => {
+  setTimeout(() => audio.muted = false, 10); // unmute after 2s
+});
+
+  // Set starting volume to 50%
+  audio.volume = .5;
+</script>
+
+
+
+<script>
+  function openPreview(imgSrc, title, desc) {
+    const modal = document.getElementById('imgPreviewModal');
+    document.getElementById('previewImage').src = imgSrc;
+    document.getElementById('previewTitle').innerText = title;
+    document.getElementById('previewDesc').innerText = desc;
+    modal.style.display = 'flex';
+  }
+  
+  function closePreview(event) {
+    if (event.target.classList.contains('modal') || event.target.classList.contains('close')) {
+      document.getElementById('imgPreviewModal').style.display = 'none';
+    }
+  }
+  </script>
+
+
+
+<!-- Quick View Modal -->
+<div id="imgPreviewModal" class="modal" onclick="closePreview(event)" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; justify-content:center; align-items:center; background: rgba(0,0,0,0.7); z-index:1000;">
+  <div class="modal-content" style="position:relative; background:#fff; padding:20px; border-radius:10px; max-width:500px; width:90%;">
+    <span class="close" onclick="closePreview(event)" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:1.5rem;">&times;</span>
+    <img id="previewImage" src="" alt="Preview" style="width:100%; border-radius:5px;">
+    <h2 id="previewTitle" style="margin-top:10px;"></h2>
+    <p id="previewDesc"></p>
+  </div>
+</div>
 
 </body>
 </html>

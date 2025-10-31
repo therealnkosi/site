@@ -12,6 +12,16 @@ header {
    border-bottom: .1px solid #020202;
 }
 /*--*LOGO*-------------------------------------------------------*/
+  /* Logo group wrapper */
+  .logo_group {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    
+  }
+ 
+ 
+
 .logo_image {
    display: flex;
    align-items: center;
@@ -52,105 +62,294 @@ header {
    font-size: clamp(.8rem, 2vw, 1.2rem) ;
    width: 100%;
    max-width: 70px;
-   
-   justify-content: left;
-   
+ 
+   margin-top: 1rem;
+   animation: glowPulse2 500ms 3 ease-in-out;
+   margin: 0 auto;
+  
 }
-h1 {
-   font-family: 'Egypt';
-}
+
 .nkosi_text .copyright {
    font-size: 0.7em;
    opacity: 0.8;
    margin-top: 15px;
 }
+
+
 .nkosi_text a {
    color: black;
    transition: color 0.4s ease, background-color 0.3s ease;
+   font-family: 'Egypt';
 }
+
 .nkosi_text a:hover {
    color: goldenrod;
-   filter: drop-shadow(3px 0 2px #000);
-}
-
-
-/*--NAV > MENU*-------------------------------------------------------*/
-.desktop-menu {
-   display: flex;
-   justify-content: center; 
-   align-items: center;
-   background-color: #000;
-   line-height: 1; 
-   height: 33px; 
-   width: 100%;
-   padding: 0 2rem; 
-
    
 }
-.desktop-menu a {
-   padding:0;
-   margin: 2%;
-   text-shadow: .5px rgb(84, 83, 83) ;
-   color: #fff;
-   
-}
-.desktop-menu a:hover {
-   color: gold;
-}
-/*|||||||||| LINKS: MOBILE |||||||||||*/
+
+
+
+/* Hide mobile menu by default */
 .mobile-menu {
-   display: none;
-   height: 100%;
-   width: 100%;
-   text-align: center;
-   color: #000;
+  display: none;
+  flex-direction: column;
+  background: #000;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+  border-bottom: 2px solid #FFD700;
+  z-index: 999;
 }
+
+/* When active, slides down */
+.mobile-menu.active {
+  display: flex;
+  max-height: 300px;
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  transition: background 0.3s;
+}
+
+.mobile-menu a:hover {
+  background: #111;
+}
+
+/* Desktop menu */
+.desktop-menu {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg,#111 20%, #3b3838 40%, #111 100%),
+  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><text x="0" y="40" font-size="40" fill="rgba(255,255,255,0.05)">𓀀𓂀𓃀</text></svg>') repeat;
+background-blend-mode: overlay;
+  padding: 10px 0;
+ 
+  box-shadow: 
+  0 4px 6px rgba(221, 221, 221, 0.288),   /* subtle depth */
+  0 8px 20px rgba(197, 196, 196, 0.2),  /* larger spread for soft shadow */
+  0 0 15px rgba(126, 126, 83, 0.5); /* golden glow accent */
+
+  border: .5rem rgb(255, 255, 255) solid;
+
+    /* Start off-screen right */
+    transform: translateX(100%);
+    opacity: 0;
+    
+    /* Animate on load */
+    animation: slideInRight 1s forwards;
+  }
+  
+  @keyframes slideInRight {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.desktop-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.desktop-menu a:hover {
+  color: #FFD700;
+}
+
+
+
+.mobile-menu {
+   transform: translateY(-20px);
+   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .mobile-menu.active {
+   transform: translateY(0);
+ }
+
+
+/* 🔥 MENU LINK ANIMATION EFFECT */
+@keyframes goldFadeIn {
+   0% {
+     opacity: 0;
+     transform: translateY(-10px);
+     color: #fff;
+     text-shadow: none;
+   }
+   50% {
+     opacity: 0.6;
+     color: #e6c200;
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0);
+     color: #FFD700;
+     text-shadow: 0 0 10px #FFD700, 0 0 20px #b48a00;
+   }
+ }
+ 
+ /* Apply fade-in to menu links */
+ .mobile-menu.active a {
+   animation: goldFadeIn 0.5s ease forwards;
+ }
+ 
+ /* Add a short delay for each link (staggered effect) */
+ .mobile-menu.active a:nth-child(1) { animation-delay: 0.1s; }
+ .mobile-menu.active a:nth-child(2) { animation-delay: 0.2s; }
+ .mobile-menu.active a:nth-child(3) { animation-delay: 0.3s; }
+ .mobile-menu.active a:nth-child(4) { animation-delay: 0.4s; }
+ 
+ /* Slightly enhance hover with gold glow */
+ .mobile-menu a:hover {
+   color: #FFD700;
+   text-shadow: 0 0 10px #FFD700, 0 0 25px #e6b30c;
+   background: #111;
+ }
+ 
+
+
+
+
+
+ /* ===== Cart Button (Optional Navbar) ===== */
+ .cart-button {
+   position: fixed;
+    top: 20;
+    right: 20;
+    background: transparent;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+    transition: 0.3s;
+  }
+
+  .cart-button:hover {
+    transform: scale(1.1);
+  }
+
+#mobile-cart {
+  display: none;
+}
+
+
+
+
+.desktop-menu a.snipcart-checkout {
+  margin-left: auto; /* pushes the cart to the far right */
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.desktop-menu a.snipcart-checkout .snipcart-items-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: rgb(161, 8, 8);
+  color: white;
+  border-radius: 50%;
+  padding: 0 5px;
+  font-size: 0.75rem;
+}
+
+#cart
+{
+  color: white;
+}
+
+
+#mobile-cart {
+
+display: none;
+
+}
+
+
+
+/* Hamburger icon */
 #bars {
-   display: none;
-   font-size: 2rem;
-   margin-right: 20px;
-   cursor: pointer;
-   width: 100%;
+  display: none;
+  font-size: 1.8rem;
+  color: #131211;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+
+
+
+
+/* Mobile view */
+@media (max-width: 700px) {
+  .desktop-menu  {
+    display: none;
+  }
+
+  #mobile-cart {
+    display: block;
+  }
+  
+
+  #bars {
+    display: block;
+  }
+
+
+
+ .nkosi_text {
+ 
+   position: absolute;
+   left: 25%;
+   transform: translateX(-50%);
+   text-align: center;
    
 }
 
-/*|||||||||| MOBILE |||||||||||*/
 
-@media screen and (max-width: 738px) {
-  #bars  {
-       display: block;
-       
-  }
-   .desktop-menu {
-       display: none;
-  }
-  #bars img {
-       display: flex;
-       width: 15%;
-       filter: invert(100);
-       float: right;
-  }
-   .mobile-menu {
-       display: block;
-       width: 100%;
-       font-size: 1rem;
-       z-index: 1;
-  }
-   .mobile-menu a {
-      background-color: black;
-       width: 100%;
-       display: block;
-       padding: 3%;
-       font-weight: bold;
-       transition: 10ms;
-       border-bottom: .1px #ffffff49 solid;
-  }
-   .mobile-menu li {
-       background-color: none;
-       width: 100%;
-  }
-   .mobile-menu a:hover {
-       background-color: #fff;
-       color: black;
-  }
+.mobile-cart {
+display: block;
+  margin-left: auto; /* pushes the cart to the far right */
+  position: absolute;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5rem;
+  top: 22px;
+  right: 15px;
+}
+
+.mobile-cart .snipcart-items-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: rgb(161, 8, 8);
+  color: white;
+  border-radius: 50%;
+  padding: 0 5px;
+  font-size: 0.75rem;
+}
+
+#cart
+{
+  color: #000;
+}
+
+
 }

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "FLOW", "LIKE", "KINGS & QUEENS", "FLOW", "LIKE",
     "KINGS & QUEENS", "FLOW", "LIKE", "KINGS & QUEENS", ""
   ];
-  const numbers = ["01","02","03","04","05","06","07","08","09","10"];
+  const numbers = ["01","02","03","04","05","06","07","08","09","10", "11"];
   const slideTitle = document.getElementById("slideTitle");
   const slideNumber = document.getElementById("slideNumber");
 

@@ -3,7 +3,9 @@
     align-items: center;
     justify-content: space-between;
     padding: clamp(2rem, 5vw, 6rem);
-    background: linear-gradient(135deg, #000 40%, #111 100%);
+    background: linear-gradient(135deg, #000 40%, #111 100%),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><text x="0" y="40" font-size="40" fill="rgba(255,255,255,0.05)">𓀀𓂀𓃀</text></svg>') repeat;
+  background-blend-mode: overlay;;
     color: #fff;
     min-height: 60vh;
     width: 100%;
@@ -19,7 +21,7 @@
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: -2px;
-    background: linear-gradient(90deg, rgb(209, 188, 66), #ffbe00);
+    background: linear-gradient(90deg, rgb(233, 231, 219), #ffbe00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -38,30 +40,14 @@
     color: #ddd;
   }
   
-  .add-cart {
-    background: gold;
-    color: #fff;
-    border: none;
-    border-radius: 40px;
-    padding: 0.9rem 2.2rem;
-    font-size: clamp(.8rem, 2vw, 1.2rem);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .add-cart:hover {
-    background: #ffbe00;
-    color: #000;
-    transform: scale(1.05);
-  }
+
   
   .feature-image img {
     width: clamp(280px, 45vw, 620px);
     transform: rotate(-12deg);
     filter: drop-shadow(0 0 25px goldenrod);
     transition: transform 0.5s ease;
+
   }
   
   .feature-image img:hover {
@@ -72,16 +58,19 @@
   
   .shop-now {
     display: inline-block;
-    padding: 8px 20px; 
-    background-color: #34352f; 
+    padding: 1rem 2rem; 
+    background-color: transparent; 
+
     color: #d3d3d3;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 4px;
+    border: 2px rgb(206, 215, 224) solid;
+    
     transition: all 0.3s ease;
     box-shadow: 0 3px 4px rgba(0,0,0,0.3);
-    margin: 1%;
+    margin: 2%;
    
     font-size: 0.85rem;
   }

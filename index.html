@@ -36,63 +36,41 @@
   </sub>-->
 
 
-
-
-
 <!-- Header -->
 
 <header>
 
+  <i class="fa-solid fa-bars" id="bars"></i>
 
-
-<!-- #1 -->
+  <div class="logo_group">
   <div class="logo_image">
-    <a href="index.html">
-      <img src="img/eye_black.png" alt="Egyptian Logo">
-    </a>
+    <img src="/img/eye_black.png" alt="Nkosi Logo">
   </div>
 
-<!-- #2 -->
+
   <div class="nkosi_text">
-
-    <a href="index.html"> <h1>NKOSI</h1></a>
-    
-    <span class="copyright" >©</span> 
+    <p>The Real</p>
+    <h1><a href="index.html">NKOSI</a></h1>
   </div>
+</div>
 
-
-
-
-<!-- #3 -->
-
-
-
-
-  <nav>
-
-   <i class="fa-solid fa-bars" id="bars"></i>
-
-  
   <div class="desktop-menu">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html">Bio</a>
     <a href="kicksandclothing.html">Shop</a>
     <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
   </div>
 
-</nav>
 
 
-</header>
+ </header>
 
-<div class="mobile-menu">
-
+ <div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Home</a>
-  <a href="about.html">About</a>
+  <a href="about.html">Bio</a>
   <a href="kicksandclothing.html">Shop</a>
   <a href="https://www.youtube.com/playlist?list=PLu9bLUV17Y4Uvtt-rqEh8fqpb-4JLHbir" target="_blank">Music</a>
 </div>
-
 
 
 
@@ -122,25 +100,25 @@
     <h1 class="drop-title">THE DROP</h1>
     <h2 class="drop-subtitle">Empowering Energy. Unstoppable Style.</h2>
     <p class="drop-text">
-      Introducing the <strong>NKOSI Pride Series</strong> — where hip-hop meets performance.
-      Built for movement, attitude, and the streets.
+      Introducing the <strong>NKOSI Pride Series</strong> — where culture meets comfort.
+      Built for movement and swag — on the streets.
     </p>
-    <!-- Snipcart Add to Cart Button -->
-    <button 
-      class="snipcart-add-item add-cart"
-      data-item-id="nkosi-pride-001"
-      data-item-name="Nkosi Pride Sneakers"
-      data-item-price="199.99"
-      data-item-url="/"
-      data-item-description="Limited edition Nkosi Pride sneakers with street-ready style."
-      data-item-image="img/shop/shoes/nkosi_pride_shoes.jpg">
-      Add to Cart
-    </button>
+
+    <div class="music-player">
+      <audio controls autoplay muted id="audio">
+        <source src="mp4/nkosi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    
+     
+    </div>
+
+  
   </div>
   
      <!-- Shop Now Button -->
   <a href="kicksandclothing.html" class="shop-now">
-    View Store
+    Shop Now!
   </a>
   
   <div class="feature-image">
@@ -162,14 +140,26 @@
 
 
 
-<h2 style="color: #fff; 
-margin-top: 5%; 
-padding: 3%; 
-background-color: #222222;">
+<h2 id="discover" 
+>
 Discover Nkosi !
 </h2>
 
         <div class="middle-box">
+
+
+                    <!-- Message-->
+                    <a href="about.html" target="_blank">
+                      <div class="card">
+                        <img src="img/malik_square.jpg" alt="Music Image">
+                            <div class="font_and_symbol">
+                          <i class="fas fa-book"></i>
+                        <p>His Story</p>
+                        <p style="font-size: 10px;">Learn About the Real Nkosi</p>
+                      </div>
+                    </div>
+                  </a>
+
 
           <!-- Shop -->
           <a href="kicksandclothing.html">
@@ -209,17 +199,7 @@ Discover Nkosi !
               </div>
             </a>
 
-                  <!-- Message-->
-                  <a href="about.html" target="_blank">
-                    <div class="card">
-                      <img src="img/malik_square.jpg" alt="Music Image">
-                          <div class="font_and_symbol">
-                        <i class="fas fa-book"></i>
-                      <p>His Story</p>
-                      <p style="font-size: 10px;">Learn About the Real Nkosi</p>
-                    </div>
-                  </div>
-                </a>
+        
     
 
 
@@ -251,56 +231,25 @@ Discover Nkosi !
 
         
         <div class="artist-profile">
-            <h2>@NKOSI-777</h2>
-            <p>Recording Artist, Songwriter,  Music Producer</p> <br>
-            <p>© 2025 NKOSI. All rights reserved. Website by <a href="www.mikoson.com">mikeson designs.</a></p>
-          </div>
+          <h2>@NKOSI-777</h2>
+          <p> Recording Artist, Songwriter, Music Producer, Motivational Speaker, Fashion Designer</p> 
+          <p>Contact @ nkositheking7@gmail.com</p><br>
+          <p>© 2025 NKOSI. All rights reserved. Website by <a href="www.mikoson.com">mikeson designs.</a></p>
+        </div>
         </footer>
 
 
-        <div class="music-player">
-            <audio controls autoplay muted id="audio">
-              <source src="mp4/nkosi.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
+      
+
+
           
-            <p id="music-message">Click play and unmute for the full experience.</p>
-          </div>
 
+  <script src="js/musicplayer.js"></script>
 
-
-  
-  <script>
-    const audio = document.getElementById("audio");
-    const message = document.getElementById("music-message");
-  
-    function enableAudioOnce(event) {
-      // Only unmute if it's muted
-      if (audio.muted) {
-        audio.muted = false;
-        audio.volume = 0.5; // optional starting volume
-        audio.play().catch(err => console.log("Audio play error:", err));
-        message.style.display = "none"; // hide the message
-      }
-    }
-
-    setTimeout(() => {
-  audio.pause();
-}, 8000); // 8000ms = 8 seconds
-
-  
-    // Only trigger on **click**
-    document.addEventListener("click", enableAudioOnce, { once: true });
-    
-  </script>
-
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 <script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
 <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
+<script src="js/cart.js"></script>
 
 
 </body>

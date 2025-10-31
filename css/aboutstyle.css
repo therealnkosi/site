@@ -54,7 +54,8 @@
 
   .about-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
     text-transform: uppercase;
     letter-spacing: 1px;
     background-color: black;
@@ -67,8 +68,8 @@
 
   .about-content h4 {
     color: white;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 
 
@@ -77,11 +78,12 @@
     font-weight: 500;
     color: #ddd;
     margin-bottom: 25px;
+
   }
 
   .about-content p {
     font-size: 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
     color: #ccc;
     text-transform: none;
   
@@ -90,7 +92,7 @@
   .about-quote {
     margin-top: 30px;
     padding: 20px;
-    border-left: 4px solid goldenrod;
+    border-left: 4px solid rgb(255, 255, 255);
     background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -98,7 +100,7 @@
   }
 
   .about-quote em {
-    color: goldenrod;
+    color: white;
   }
 
   @media (max-width: 768px) {
@@ -114,11 +116,26 @@
     }
 
     .about-content h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     .about-quote {
       border-left: none;
       border-top: 3px solid #43b7ff;
+    }
+
+    .about-content h3 {
+      font-weight: 500;
+      color: #ddd;
+      margin-bottom: 25px;
+      font-size: .7rem;
+      
+      
+    }
+
+    .about-content p {
+      font-size: .9rem;
+   
+    
     }
   }
