@@ -178,6 +178,7 @@ background-blend-mode: overlay;
  }
 
 
+ 
 /* 🔥 MENU LINK ANIMATION EFFECT */
 @keyframes goldFadeIn {
    0% {
@@ -197,6 +198,7 @@ background-blend-mode: overlay;
      text-shadow: 0 0 10px #FFD700, 0 0 20px #b48a00;
    }
  }
+ 
  
  /* Apply fade-in to menu links */
  .mobile-menu.active a {
